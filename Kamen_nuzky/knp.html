@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="webcam.js"></script>
+<script src="rps-dataset.js"></script>
+</head>
+<body>
+	<div>
+		<div>
+			<video autoplay playsinline muted id="wc" width="224" height="224"></video>
+		</div>
+	</div>
+	<button type="button" id="0" onclick="handleButton(this)" >Kamen</button>
+	<button type="button" id="1" onclick="handleButton(this)" >Nuzky</button>
+	<button type="button" id="2" onclick="handleButton(this)" >Papir</button>
+	
+	<div id="rocksamples">Priklady 'kamen':</div>
+	<div id="scissorssamples">Priklady 'nuzky':</div>
+	<div id="papersamples">Priklady 'papir':</div>
+	
+	<button type="button" id="train" onclick="doTraining()" >Natrenuj neuronovou sit, tj. nauc se rozpoznavat jednotlive obrazky</button>
+	<div id="dummy">Pokud je trenovani dokonceno, kliknete na 'Zacit predpovidat' abyste videli zivou ukazku predpovedi a stiskem 'Ukoncit predpovidani' ji ukoncit</div>
+	<button type="button" id="startPredicting" onclick="startPredicting()" >Zacit predpovidat</button>
+	<button type="button" id="stopPredicting" onclick="stopPredicting()" >Ukoncit predpovidani</button>
+	<div id="prediction"></div>
+</body>
+
+<script src="index.js"></script>
+</html>
