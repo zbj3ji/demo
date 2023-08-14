@@ -12,4 +12,4 @@ Jednoducha demonstrace "kamen, nuzky, papir"
 
 ---
 
-Inspirovano skolenim **"TensorFlow Developer"** od **DeepLearningAI**
+Inspirovano skolenim **["TensorFlow Developer"](https://www.coursera.org/professional-certificates/tensorflow-in-practice)** od **[DeepLearningAI](https://www.deeplearning.ai/courses/)**
